@@ -1,6 +1,8 @@
 #[cfg(feature = "with-xz2")]
 use std::cmp;
 use std::io;
+use xz2::write::{XzEncoder};
+use std::io::prelude::*;
 #[cfg(feature = "with-zstd")]
 use std::io::Read;
 #[cfg(any(
